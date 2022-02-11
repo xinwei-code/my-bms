@@ -1,0 +1,43 @@
+# Vue3 后台管理系统
+
+## 技术栈
+
+`Vue3 + Element + Pinia + Vue Router + TypeScript + Axios + Eslint + Prettier + Husky`
+
+## 在线预览
+
+[在线预览](https://my-bms.vercel.app/)
+
+测试账号：
+
+用户名： coderwhy
+
+密码： 123456
+
+## Project setup
+
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+
+```
+yarn build
+```
+
+### Lints and fixes files
+
+```
+yarn lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
