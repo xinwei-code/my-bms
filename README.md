@@ -6,11 +6,11 @@
 
 ## 在线预览
 
-[在线预览](https://my-bms.vercel.app/)
+[在线预览](https://xin-bms.vercel.app/)
 
 测试账号：
 
-用户名： coderwhy
+用户名： weixin
 
 密码： 123456
 
