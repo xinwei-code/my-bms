@@ -17,7 +17,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import { PageWrapper, Description } from '@/base-ui/page'
-import settingStore from '@/store/modules/sys'
+// import settingStore from '@/store/modules/sys'
 export default defineComponent({
   name: 'overview',
   components: { PageWrapper, Description },
@@ -35,7 +35,7 @@ export default defineComponent({
     })
     const GITHUB_URL = process.env.VUE_APP_GITHUB_URL
 
-    const store = settingStore()
+    // const store = settingStore()
     const column = ref(3)
     const width = document.documentElement.clientWidth
     if (width < 768) {

@@ -51,7 +51,7 @@ export default defineComponent({
       console.log('select', selectConfig.value)
     }
     const handleWidthChange = () => {
-      debugger
+      // debugger
       const windowWidth = document.documentElement.clientWidth
       store.changeScreenWidth(windowWidth)
       if (windowWidth < 1000) {

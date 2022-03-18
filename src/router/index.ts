@@ -2,8 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { App } from 'vue'
 import localCache from '@/utils/cache'
 import basicRoute from './modules/basic'
+// console.log(process.env.BASE_URL)
 // import { mapMenuToRoute } from '@/utils/mapMenu'
 const router = createRouter({
+  //createWebHistory() // 没有 base，应用托管在域名 `https://example.com` 的根目录下。
+
   history: createWebHistory(process.env.BASE_URL),
   routes: basicRoute
 })

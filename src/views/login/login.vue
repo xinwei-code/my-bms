@@ -26,5 +26,9 @@ export default defineComponent({
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e6f7e7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e6f7e7 0.5px);
+  background-size: 10px 10px;
 }
 </style>

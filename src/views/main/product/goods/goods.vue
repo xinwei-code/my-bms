@@ -28,7 +28,7 @@
 import { defineComponent } from 'vue'
 import { tableConfig, searchConfig } from './config'
 /*引入hooks*/
-import { usePageModal } from '@/hooks/use-page-modal'
+// import { usePageModal } from '@/hooks/use-page-modal'
 export default defineComponent({
   name: 'goods',
   setup() {

@@ -1,5 +1,5 @@
 const mode = process.env.VUE_APP_BASE_URL
-let base_Url
+// let base_Url
 if (mode === 'development') {
   console.log(mode)
 } else if (mode === 'production') {

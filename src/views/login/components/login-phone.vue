@@ -11,12 +11,15 @@
     </el-form-item>
     <el-form-item prop="verifyCode" label="验证码：">
       <el-input
-        v-model.number="ruleForm.password"
+        v-model.number="ruleForm.verifyCode"
         type="password"
         autocomplete="off"
       >
         <template #append>
-          <el-button @click="handleGetVerifyCode" style="color: #007fff"
+          <el-button
+            @click="handleGetVerifyCode"
+            :loading="isLoading"
+            style="color: #007fff"
             >获取验证码</el-button
           >
         </template>
@@ -25,7 +28,7 @@
   </el-form>
 </template>
 <script lang="ts">
-import { defineComponent, reactive } from 'vue'
+import { defineComponent, reactive, ref } from 'vue'
 // import { phoneInfo } from '@/types/user'
 export default defineComponent({
   name: 'LoginByPhone',
@@ -52,10 +55,16 @@ export default defineComponent({
         }
       ]
     })
+    const isLoading = ref(false)
     const handleGetVerifyCode = () => {
+      isLoading.value = true
       console.log('get code...')
+      //简单模拟发送验证码的等待过程
+      setTimeout(() => {
+        isLoading.value = false
+      }, 5000)
     }
-    return { ruleForm, rules, handleGetVerifyCode }
+    return { ruleForm, rules, handleGetVerifyCode, isLoading }
   }
 })
 </script>
